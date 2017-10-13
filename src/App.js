@@ -16,15 +16,20 @@ const justifyCenter = css`
 `
 
 const heading1 = css`
-  lineHeight: 1.2
+  lineHeight: 1.2;
+  font-weight: 600;
+  margin-bottom: 16px;
 `
 
-const heading2 = css `
+const heading2 = css`
   lineHeight: 1.4
 `
 
+const heading3 = css`
+  padding-right: 20vw
+`
 const textCore = css`
-  padding-right: 30vw
+  padding-right: 20vw
 `
 
 const mainContent = css`
@@ -39,7 +44,8 @@ const mainContent = css`
 `
 
 const isWhite = css`
-  color: #FFFFFF
+  color: #ffc107;
+  text-decoration: none;
 `
 
 class App extends Component {
@@ -48,18 +54,17 @@ class App extends Component {
       <div>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>Lyt App - vidyos IRL</title>
+            <title>👏 Lyt App - vidyos IRL</title>
             <link rel="canonical" href="https://lyt.io" />
         </Helmet>
         <main className={mainContent}>
           <div className={justifyCenter}>
-            <h1 className={heading1}>Hello 👋.<br />Nice to meet you.</h1>
-            <h3 className={heading2}>This is how Lyt works:<br /><br />Capture newsworthy 60s video.<br />
-              Upload to 🕸 using <strong>Lyt App</strong>.<br />
-              License to news/media outlet.<br />
-              Earn 👏 or 💵💵💵.<br />
-              Disco.</h3>
-            <p className={textCore}>We're not ready for full scale deploy. If you are a news bureau, inquire how you can get early access to: <a className={isWhite} href="mailto:v@lyt.io">v@lyt.io</a>.</p>
+            <h1 className={heading1}>You have captured a newsworthy vidyo.</h1>
+            <h2 className={heading2}>Now how do you make 💵💵💵 off of it?</h2>
+            <h3 className={heading3}>That is what Lyt is all about and we are about to release this 🐶 early next year.</h3>
+            <p className={textCore}>If you are a 🌱 investor, a 📰 bureau, or just plain curio, <a className={isWhite} href="mailto:v@lyt.io">hit us up to get early access</a>.</p>
+            <p><small>* paparazzi-wannabe not welcome</small></p>
+
           </div>
         </main>
       </div>
