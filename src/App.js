@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import {Helmet} from "react-helmet";
-import { css } from 'emotion';
-import Typography from 'typography';
-import bootstrapTheme from 'typography-theme-bootstrap';
+import React, { Component } from 'react'
+import {Helmet} from 'react-helmet'
+import { css } from 'emotion'
+import Typography from 'typography'
+import bootstrapTheme from 'typography-theme-bootstrap'
+
 const typography = new Typography(bootstrapTheme);
+
 typography.injectStyles();
 
 const flex = css`
@@ -20,11 +22,6 @@ const heading1 = css`
   font-weight: 600;
   margin-bottom: 16px;
 `
-
-const heading2 = css`
-  lineHeight: 1.4
-`
-
 const heading3 = css`
   padding-right: 20vw
 `
@@ -48,23 +45,26 @@ const isWhite = css`
   text-decoration: none;
 `
 
+const headerSitewide = css`
+  color: #000000;
+  text-decoration: none;
+`
+
 class App extends Component {
   render() {
     return (
       <div>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>👏 Lyt App - vidyos IRL</title>
+            <title>Lyt App - vidyos IRL</title>
             <link rel="canonical" href="https://lyt.io" />
         </Helmet>
         <main className={mainContent}>
           <div className={justifyCenter}>
-            <h1 className={heading1}>You have captured a newsworthy vidyo.</h1>
-            <h2 className={heading2}>Now how do you make 💵💵💵 off of it?</h2>
-            <h3 className={heading3}>That is what Lyt is all about and we are about to release this 🐶 early next year.</h3>
-            <p className={textCore}>If you are a 🌱 investor, a 📰 bureau, or just plain curio, <a className={isWhite} href="mailto:v@lyt.io">hit us up to get early access</a>.</p>
+            <h1 className={heading1}>Earn <span role="img" aria-label="cash">💵</span> while you share your videos.*</h1>
+            <h3 className={heading3}>We are about to release this  <span role="img" aria-label="puppy">🐶</span> early next year.</h3>
+            <p className={textCore}>If you are a  <span role="img" aria-label="seed">🌱</span> investor, a  <span role="img" aria-label="news">📰</span> bureau, or just plain curio, <a className={isWhite} href="mailto:v@lyt.io">hit us up to get early access</a>.</p>
             <p><small>* paparazzi-wannabe not welcome</small></p>
-
           </div>
         </main>
       </div>
@@ -72,4 +72,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App
