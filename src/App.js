@@ -45,18 +45,13 @@ const isWhite = css`
   text-decoration: none;
 `
 
-const headerSitewide = css`
-  color: #000000;
-  text-decoration: none;
-`
-
 class App extends Component {
   render() {
     return (
       <div>
         <Helmet>
             <meta charSet="utf-8" />
-            <title>Lyt App - vidyos IRL</title>
+            <title>Lyt App - earn cash from shared videos</title>
             <link rel="canonical" href="https://lyt.io" />
         </Helmet>
         <main className={mainContent}>
