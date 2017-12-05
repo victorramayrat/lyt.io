@@ -3,19 +3,21 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Tos from '../pages/Tos'
 import { css } from 'emotion'
 
-const HeaderSitewide__nav = css`
+const FooterSitewide__nav = css`
   position: absolute;
-  top: 0;
-  left: 0
+  bottom: 0
+`
+const FooterSitewide__navlist = css`
+  color: #fff
 `
 
-class HeaderSitewide extends Component {
+class FooterSitewide extends Component {
   render() {
     return (
       <Router>
-        <nav className={HeaderSitewide__nav}>
+        <nav className={FooterSitewide__nav}>
           <ul>
-            <li><Link to="/tos">Terms of Service</Link></li>
+            <li><Link to="/tos" className={FooterSitewide__navlist}>Terms of Service</Link></li>
           </ul>
           <Route path="/tos" component={Tos}/>
         </nav>
@@ -24,4 +26,4 @@ class HeaderSitewide extends Component {
   }
 }
 
-export default HeaderSitewide;
+export default FooterSitewide;

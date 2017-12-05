@@ -3,6 +3,8 @@ import {Helmet} from 'react-helmet'
 import { css } from 'emotion'
 import Typography from 'typography'
 import bootstrapTheme from 'typography-theme-bootstrap'
+// import HeaderSitewide from './components/Header-sitewide'
+// import FooterSitewide from './components/Footer-sitewide'
 
 const typography = new Typography(bootstrapTheme);
 
@@ -16,32 +18,39 @@ const justifyCenter = css`
   flex-flow: column wrap;
   justifyContent: center;
 `
-
 const heading1 = css`
   lineHeight: 1.2;
   font-weight: 600;
   margin-bottom: 16px;
+  color: #000000
 `
 const heading3 = css`
   padding-right: 20vw
 `
 const textCore = css`
-  padding-right: 20vw
+  padding-right: 20vw;
+  color: #000000;
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 200;
+  letter-spacing: .02em
 `
-
 const mainContent = css`
   padding: 0 5vw
   color: #ffffff;
-  background: #ff00cc;
-  background: -webkit-linear-gradient(to bottom, #ff00cc), #333399; 
-  background: linear-gradient(to bottom, #ff00cc, #333399);
+  background: #ffecce;
+  // background: -webkit-linear-gradient(to bottom, #ff00cc), #333399; 
+  // background: linear-gradient(to bottom, #ff00cc, #333399);
   height: 100vh;
   display: flex
   align-items: center
 `
-
 const isWhite = css`
   color: #ffc107;
+  text-decoration: none;
+`
+const isLink = css`
+  color: #73a2ff;
   text-decoration: none;
 `
 
@@ -56,10 +65,9 @@ class App extends Component {
         </Helmet>
         <main className={mainContent}>
           <div className={justifyCenter}>
-            <h1 className={heading1}>Earn <span role="img" aria-label="cash">💵</span> while you share your videos.*</h1>
-            <h3 className={heading3}>We are about to release this  <span role="img" aria-label="puppy">🐶</span> early next year.</h3>
-            <p className={textCore}>If you are a  <span role="img" aria-label="seed">🌱</span> investor, a  <span role="img" aria-label="news">📰</span> bureau, or just plain curio, <a className={isWhite} href="mailto:v@lyt.io">hit us up to get early access</a>.</p>
-            <p><small>* paparazzi-wannabe not welcome</small></p>
+            <img src="lyt_logo.png" alt="Lyt" width="160" />
+            <h1 className={heading1}>You know what’s lit; now share it!</h1>
+            <p className={textCore}> In a world where timing is everything, we value what you see. Capture up to 60 seconds of real-time, newsworthy footage, upload it to Lyt, and wait to be discovered. <a className={isLink} href="mailto:v@lyt.io">Sign up today</a> for early access. You’ll be the first to know when it’s time to record or discover.</p>
           </div>
         </main>
       </div>
