@@ -19,10 +19,13 @@ const justifyCenter = css`
   justifyContent: center;
 `
 const heading1 = css`
-  lineHeight: 1.2;
+  font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
   color: #000000
+  @media (max-width: 767px) {
+    font-size: 32px;
+  }
 `
 const heading3 = css`
   padding-right: 20vw
@@ -34,6 +37,9 @@ const textCore = css`
   line-height: 1.4;
   font-weight: 200;
   letter-spacing: .02em
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
 `
 const mainContent = css`
   padding: 0 5vw
