@@ -18,9 +18,16 @@ const justifyCenter = css`
   flex-flow: column wrap;
   justifyContent: center;
 `
+const logo = css`
+  font-family: 'Akronim', cursive;
+  color: red;
+  font-size: 88px;
+  margin-bottom: 40px;
+`
+
 const heading1 = css`
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 400;
   margin-bottom: 16px;
   color: #000000
   @media (max-width: 767px) {
@@ -31,7 +38,7 @@ const heading3 = css`
   padding-right: 20vw
 `
 const textCore = css`
-  padding-right: 20vw;
+  padding-right: 8vw;
   color: #000000;
   font-size: 28px;
   line-height: 1.4;
@@ -59,6 +66,12 @@ const isLink = css`
   color: #73a2ff;
   text-decoration: none;
 `
+const isSmall = css`
+  color: orange;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+`
 
 class App extends Component {
   render() {
@@ -68,12 +81,14 @@ class App extends Component {
             <meta charSet="utf-8" />
             <title>Lyt App - earn cash from shared videos</title>
             <link rel="canonical" href="https://lyt.io" />
+            <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet" /> 
         </Helmet>
         <main className={mainContent}>
           <div className={justifyCenter}>
-            <img src="lyt_logo.png" alt="Lyt" width="160" />
+            <p className={logo}>lyt</p>
             <h1 className={heading1}>You know what’s lit; now share it!</h1>
-            <p className={textCore}> In a world where timing is everything, we value what you see. Capture up to 60 seconds of real-time, newsworthy footage, upload it to Lyt, and wait to be discovered. <a className={isLink} href="mailto:v@lyt.io">Sign up today</a> for early access. You’ll be the first to know when it’s time to record or discover.</p>
+            <p className={textCore}> In a world where timing is everything, we value what you see. Capture up to 60 seconds of real-time, newsworthy footage, upload it to Lyt, and get discovered. Then share and monetize your digital assets using the <strong>Lyt Licensing DApp</strong>.</p>
+            <p className={isSmall}>Built with Solidity. <a className={isLink} href="mailto:v@lyt.io">Early Access</a>.</p>
           </div>
         </main>
       </div>
