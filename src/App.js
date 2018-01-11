@@ -17,6 +17,10 @@ const justifyCenter = css`
   composes: ${flex};
   flex-flow: column wrap;
   justifyContent: center;
+  @media (min-width: 1200px) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 `
 const logo = css`
   font-family: 'Akronim', cursive;
@@ -54,12 +58,12 @@ const textCore = css`
 const mainContent = css`
   padding: 0 5vw
   color: #ffffff;
-  background: #ffecce;
-  // background: -webkit-linear-gradient(to bottom, #ff00cc), #333399; 
-  // background: linear-gradient(to bottom, #ff00cc, #333399);
+  background: #ddd6f3;
+  background: -webkit-linear-gradient(to bottom, #faaca8, #ddd6f3);
+  background: linear-gradient(to bottom, #faaca8, #ddd6f3);
   height: 100vh;
-  display: flex
-  align-items: center
+  display: flex;
+  align-items: center;
 `
 const isWhite = css`
   color: #ffc107;
@@ -70,7 +74,7 @@ const isLink = css`
   text-decoration: none;
 `
 const isSmall = css`
-  color: orange;
+  color: red;
   text-decoration: none;
   font-size: 12px;
   text-transform: uppercase;
