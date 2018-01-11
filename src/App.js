@@ -21,15 +21,17 @@ const justifyCenter = css`
 const logo = css`
   font-family: 'Akronim', cursive;
   color: red;
-  font-size: 116px;
+  font-size: 108px;
   line-height: 1.2;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 `
 
 const heading1 = css`
-  font-size: 36px;
+  font-size: 32px;
+  line-height: 1.2;
   font-weight: 400;
   margin-bottom: 16px;
+  padding-right: 8vw;
   color: #000000
   @media (max-width: 767px) {
     font-size: 32px;
