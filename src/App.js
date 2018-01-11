@@ -94,8 +94,8 @@ class App extends Component {
           <div className={justifyCenter}>
             <p className={logo}>lyt</p>
             <h1 className={heading1}>You know what’s lit; now share it!</h1>
-            <p className={textCore}> In a world where timing is everything, we value what you see. Capture up to 60 seconds of real-time, newsworthy footage, upload it to Lyt, and get discovered. Then share and monetize your digital assets using the <strong>Lyt Licensing DApp</strong>.</p>
-            <p className={isSmall}>Built with Solidity. <a className={isLink} href="mailto:v@lyt.io">Early Access</a>.</p>
+            <p className={textCore}> In a world where timing is everything, we value what you see. Capture up to 60 seconds of real-time, newsworthy footage, upload it to Lyt, and get discovered. Then share and monetize your digital assets using the <strong>Lyt Licensing ĐApp</strong>.</p>
+            <p className={isSmall}><a className={isLink} href="https://github.com/ethereum/solidity" target="_blank">Built with Solidity</a>. <a className={isLink} href="mailto:v@lyt.io" target="_blank">Early Access</a>.</p>
           </div>
         </main>
       </div>
